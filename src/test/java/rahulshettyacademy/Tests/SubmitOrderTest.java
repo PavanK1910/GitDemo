@@ -13,6 +13,7 @@ import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import io.opentelemetry.exporter.logging.SystemOutLogRecordExporter;
 import rahulshettyacademy.PageObjects.CartPage;
 import rahulshettyacademy.PageObjects.CheckoutPage;
 import rahulshettyacademy.PageObjects.ConfirmationPage;
@@ -68,7 +69,10 @@ public class SubmitOrderTest extends Basetest {
 		Assert.assertTrue(ordersPage.VerifyProducDisplay(productName));
 	}
 	
-	
+	@Test
+	public void branchforGit() {
+		System.out.println("Create a branch for GitBranch test");
+	}
 	
 	//Extends reports 
 	
